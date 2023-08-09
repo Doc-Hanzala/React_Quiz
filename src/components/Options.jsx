@@ -1,7 +1,16 @@
-const Options = ({ option }) => {
-  return (
+const Options = ({ option, dispatch, index, correctOption, answer }) => {
+  const hasAnswered = answer !== null;
+  return ( 
     <div className="option">
-      <button className="btn">{option}</button>
+      <button
+        disabled={hasAnswered}
+        onClick={() => dispatch({ type: "newAnswer", payLoad: index })}
+        className={`btn   ${
+          hasAnswered ? (index === correctOption ? "green" : "red") : ""
+        } `}
+      >
+        {option}
+      </button>
     </div>
   );
 };

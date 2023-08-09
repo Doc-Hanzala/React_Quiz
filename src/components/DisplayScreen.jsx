@@ -1,5 +1,5 @@
 const DisplayScreen = ({ questionsNum, dispatch }) => {
-  return (
+  return ( 
     <div className="display">
       <h2>welcome to the react quiz</h2>
       <p>{questionsNum} questions included in your quiz</p>
