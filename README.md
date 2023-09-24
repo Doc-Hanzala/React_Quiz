@@ -9,6 +9,4 @@
   -  Run " npm run dev " in terminal
   -  Open the link
 
- # Live Preview
- https://810-reactquiz.netlify.app/
 
